@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row">
             <div class="col-6">
-                <img width="800" height="600" class="img-thumbnail" src="./images/portfolio/1.jpg"
+                <img id="project-1" width="800" height="600" class="img-thumbnail" src="./images/portfolio/1.jpg"
                      class="img-thumbnail" alt="...">
             </div>
             <div class="col-6">
@@ -35,11 +35,22 @@
                 “Easy learning: Data Structures and Algorithms” is .....
             </div>
             <div class="col-6">
-                <img width="800" height="600" class="img-thumbnail" src="./images/portfolio/2.jpg"
+                <img id="project-2" width="800" height="600" class="img-thumbnail" src="./images/portfolio/2.jpg"
                      class="img-thumbnail" alt="...">
             </div>
         </div>
     </div>
     <br>
     <br>
+
+    <script>
+        $(function(){
+            $("#project-1").click(function(){
+                $("#nav-tabContent").load("./project/1.html");
+            });
+            $("#project-2").click(function(){
+                $("#nav-tabContent").load("./project/2.html");
+            });
+        })
+    </script>
 </body>

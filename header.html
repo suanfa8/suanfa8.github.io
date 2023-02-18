@@ -1,0 +1,31 @@
+<br>
+<ul class="nav justify-content-end">
+    <li class="nav-item">
+        <a class="nav-link active" href="#" id="nav-home-tab" data-bs-toggle="tab"
+           data-bs-target="#nav-home">HOME</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#" id="nav-profile-tab" data-bs-toggle="tab"
+           data-bs-target="#nav-profile">PORTFOLIO</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#" id="nav-personal-tab" data-bs-toggle="tab"
+           data-bs-target="#nav-contact">PERSONAL</a>
+    </li>
+</ul>
+
+<script>
+    $(function(){
+        $("#nav-home-tab").click(function(){
+            $("#nav-tabContent").load("home.html");
+        });
+
+        $("#nav-profile-tab").click(function(){
+            $("#nav-tabContent").load("portfolio.html");
+        });
+
+        $("#nav-personal-tab").click(function(){
+            $("#nav-tabContent").load("personal.html");
+        });
+    });
+</script>

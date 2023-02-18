@@ -10,17 +10,17 @@
     <br>
     <div class="row">
         <div class="col-4">
-            <img width="400" height="300" class="img-thumbnail" src="./images/personal/1.jpg"
+            <img id="personal-1" width="400" height="300" class="img-thumbnail" src="./images/personal/1.jpg"
                  class="img-thumbnail" alt="北京">
 
         </div>
         <div class="col-4">
-            <img width="400" height="300" class="img-thumbnail" src="./images/personal/2.jpg"
+            <img id="personal-2" width="400" height="300" class="img-thumbnail" src="./images/personal/2.jpg"
                  class="img-thumbnail" alt="...">
 
         </div>
         <div class="col-4">
-            <img width="400" height="300" class="img-thumbnail" src="./images/personal/3.jpg"
+            <img id="personal-3" width="400" height="300" class="img-thumbnail" src="./images/personal/3.jpg"
                  class="img-thumbnail" alt="...">
         </div>
     </div>
@@ -36,4 +36,18 @@
             <p class="text-center">Guangzhou</p>
         </div>
     </div>
+
+    <script>
+        $(function(){
+            $("#personal-1").click(function(){
+                $("#nav-tabContent").load("./personal/1.html");
+            });
+            $("#personal-2").click(function(){
+                $("#nav-tabContent").load("./personal/2.html");
+            });
+            $("#personal-3").click(function(){
+                $("#nav-tabContent").load("./personal/3.html");
+            });
+        })
+    </script>
 </div>

@@ -2,56 +2,123 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bootstrap demo</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Philip Pan</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+        .nav-link {
+            color: #000000
+        }
+
+        hr {
+            border-top: 1px solid #000000; /* 或者使用黑色的十六进制值#000 */
+        }
+    </style>
 </head>
 
 <body>
-  <div class="container">
+<div class="container">
     <br>
     <ul class="nav justify-content-end">
-      <li class="nav-item">
-        <a class="nav-link active" href="#" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home">HOME</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#" id="nav-profile-tab" data-bs-toggle="tab"
-          data-bs-target="#nav-profile">PORTFOLIO</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#" id="nav-contact-tab" data-bs-toggle="tab"
-          data-bs-target="#nav-contact">PERSONAL</a>
-      </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="#" id="nav-home-tab" data-bs-toggle="tab"
+               data-bs-target="#nav-home">HOME</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#" id="nav-profile-tab" data-bs-toggle="tab"
+               data-bs-target="#nav-profile">PORTFOLIO</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#" id="nav-contact-tab" data-bs-toggle="tab"
+               data-bs-target="#nav-contact">PERSONAL</a>
+        </li>
     </ul>
-  </div>
+</div>
 
-  <hr style="border-width: 2px; border-style: solid; border-color: black;">
+<hr class="bg-dark" style="border-width: 2px; border-style: solid; border-color: black;">
 
-  <div class="tab-content" id="nav-tabContent">
+<div class="tab-content" id="nav-tabContent">
     <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-      Hi there
+        <div class="container">
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-3">
+                    <img width="300" height="300" src="./images/frontpage/1.jpg" class="img-thumbnail" alt="...">
+                </div>
+                <div class="col-9">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
 
-      My name is Philip Pan, I am an instructional & E-learning developer. I graduated from the Ohio State University,
-      with a concentration on Chinese linguistics. After I graduated, I started my career as an E-learning developers
-      for K12 English language learning Tech company in China ......
+                    Hi there
+
+                    My name is Philip Pan, I am an instructional & E-learning developer. I graduated from the Ohio State
+                    University,
+                    with a concentration on Chinese linguistics. After I graduated, I started my career as an E-learning
+                    developers
+                    for K12 English language learning Tech company in China ......
+                </div>
+            </div>
+        </div>
+
+
     </div>
     <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-      Easy Learning: Data Structures and Algorithms
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <img width="800" height="600" src="./images/portfolio/1.jpeg" class="img-thumbnail" alt="...">
+                </div>
+                <div class="col-6">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    Easy Learning: Data Structures and Algorithms
 
-      Project type: E-learning
+                    Project type: E-learning
 
-      “Easy learning: Data Structures and Algorithms” is .....
+                    “Easy learning: Data Structures and Algorithms” is .....
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-6">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    Easy Learning: Data Structures and Algorithms
+
+                    Project type: E-learning
+
+                    “Easy learning: Data Structures and Algorithms” is .....
+                </div>
+                <div class="col-6">
+                    <img width="800" height="600" src="./images/portfolio/2.jpeg" class="img-thumbnail" alt="...">
+                </div>
+            </div>
+        </div>
+
     </div>
     <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">Contact content</div>
-  </div>
+</div>
 
-  <!-- 在表单中插入拉通的水平分割线 -->
+<!-- 在表单中插入拉通的水平分割线 -->
 
 
-  <!-- 最新编译的 JavaScript -->
-  <script src="https://www.w3school.com.cn/lib/bs/bootstrap.js"></script>
+<!-- 最新编译的 JavaScript -->
+<script src="https://www.w3school.com.cn/lib/bs/bootstrap.js"></script>
 
 </body>
 
